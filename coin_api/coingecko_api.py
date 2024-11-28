@@ -17,7 +17,7 @@ class GeCoin_Api:
             if value is None:
                 continue
 
-            tmp_str += f'{value['id']},'
+            tmp_str += f"{value['id']},"
 
         return tmp_str
 
