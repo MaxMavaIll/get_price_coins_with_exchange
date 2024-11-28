@@ -9,7 +9,7 @@ def main():
     curent_time = datetime.now()
     coins_gecko = GeCoin_Api()
 
-    if curent_time.hour == 0:
+    if curent_time.hour == 0 or coins_gecko.get_name_networks() == {}:
         coins_gecko.set_name_networks(sheets.get_network())
         coins_gecko.get_info_coins_list()
     coins_gecko.get_info_networks()
