@@ -5,7 +5,7 @@ import toml
 config_toml = toml.load('config.toml')
 
 URL = {
-    "api_sheets": config_toml['url_sheets'],
+    "api_sheets": config_toml['gg_sheets']['url_sheets'],
 }
 
 
